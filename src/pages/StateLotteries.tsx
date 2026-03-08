@@ -1,7 +1,7 @@
 import { ArrowRight, TrendingUp, Scale, BarChart3, FileText, Monitor, ShieldCheck, Check } from 'lucide-react';
 import { ContactForm } from '@/components/ContactForm';
 
-export function MunicipalLotteries() {
+export function StateLotteries() {
   return (
     <div className="flex flex-col min-h-screen bg-background-dark text-white">
       {/* Hero Section */}
@@ -15,17 +15,17 @@ export function MunicipalLotteries() {
               Consultoria Especializada
             </div>
             <h1 className="text-4xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight font-display">
-              A Solução Completa para <span className="text-primary">Gestão de Loterias Municipais</span>
+              A Solução Completa para <span className="text-primary">Gestão de Loterias Estaduais</span>
             </h1>
             <p className="text-lg text-slate-400 max-w-2xl leading-relaxed">
-              Aumente a arrecadação do seu município sem subir impostos. Implementamos loterias municipais com segurança jurídica, transparência e alta tecnologia, revertendo recursos para o bem da comunidade.
+              Aumente a arrecadação do seu estado sem subir impostos. Implementamos loterias estaduais com segurança jurídica, transparência e alta tecnologia, revertendo recursos diretamente para políticas públicas e investimentos sociais.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="#contact"
                 className="inline-flex justify-center items-center px-8 py-4 border border-transparent text-base font-bold rounded-lg text-white bg-primary hover:bg-primary-dark transition-all shadow-lg shadow-primary/25 hover:shadow-primary/40 transform hover:-translate-y-0.5"
               >
-                Leve para sua cidade
+                Leve para o seu estado
                 <ArrowRight className="ml-2 h-5 w-5" />
               </a>
               <a
@@ -67,7 +67,9 @@ export function MunicipalLotteries() {
           <Scale className="mx-auto h-12 w-12 text-primary mb-4" />
           <h2 className="text-3xl font-bold text-white mb-6 font-display">Segurança Jurídica Garantida pelo STF</h2>
           <p className="text-lg text-slate-400 leading-relaxed">
-            O Supremo Tribunal Federal (STF) decidiu que a exploração de loterias não é exclusividade da União. Isso significa que <span className="text-primary font-semibold">Estados e Municípios têm competência para criar e explorar suas próprias loterias</span>, gerando uma nova e poderosa fonte de receita pública legal e segura.
+            O Supremo Tribunal Federal (STF) decidiu que a exploração de loterias não é exclusividade da União. Isso significa que{' '}
+            <span className="text-primary font-semibold">os Estados têm competência para criar e explorar suas próprias loterias</span>,
+            estruturando projetos estaduais com base legal sólida, transparência e controle rigoroso.
           </p>
         </div>
       </section>
@@ -81,16 +83,16 @@ export function MunicipalLotteries() {
               Expertise de Ponta a Ponta
             </p>
             <p className="mt-4 max-w-2xl text-xl text-slate-400 mx-auto">
-              Oferecemos todo o suporte necessário para a implementação bem-sucedida da sua loteria municipal.
+              Oferecemos todo o suporte necessário para a implementação bem-sucedida da sua loteria estadual.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { icon: Scale, title: "Consultoria Jurídica", desc: "Análise completa da legislação local e adequação às normas federais para garantir total segurança jurídica ao projeto." },
-              { icon: BarChart3, title: "Diagnóstico de Potencial", desc: "Estudos de viabilidade econômica e projeção de arrecadação baseados no perfil demográfico e econômico do município." },
-              { icon: FileText, title: "Modelagem de Edital", desc: "Elaboração técnica de editais de licitação e termos de referência para contratação de operadores ou sistemas." },
-              { icon: Monitor, title: "Plataforma Tecnológica", desc: "Soluções de software para gestão, venda e controle de jogos, com certificações de segurança internacionais." },
+              { icon: Scale, title: "Consultoria Jurídica", desc: "Análise completa da legislação estadual e adequação às normas federais para garantir total segurança jurídica ao projeto." },
+              { icon: BarChart3, title: "Diagnóstico de Potencial", desc: "Estudos de viabilidade econômica e projeção de arrecadação com base no perfil demográfico e econômico do estado." },
+              { icon: FileText, title: "Modelagem de Edital", desc: "Elaboração técnica de leis, regulamentos e editais de licitação para contratação de operadores ou sistemas." },
+              { icon: Monitor, title: "Plataforma Tecnológica", desc: "Soluções de software para gestão, venda e controle de jogos em escala estadual, com certificações de segurança internacionais." },
               { icon: ShieldCheck, title: "Gestão e Compliance", desc: "Monitoramento contínuo das operações, garantindo transparência, jogo responsável e conformidade legal." }
             ].map((service, i) => (
               <div key={i} className={`bg-surface-dark rounded-xl p-8 border border-white/5 hover:border-primary/50 transition-colors shadow-sm hover:shadow-lg group ${i === 4 ? 'md:col-span-2 lg:col-span-1' : ''}`}>
@@ -112,17 +114,18 @@ export function MunicipalLotteries() {
           <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
             <div>
               <h2 className="text-3xl font-extrabold text-white sm:text-4xl mb-6 font-display">
-                Por que investir em uma <span className="text-primary">Loteria Municipal?</span>
+                Por que investir em uma <span className="text-primary">Loteria Estadual?</span>
               </h2>
               <p className="text-lg text-slate-400 mb-8">
-                Além de ser uma fonte de receita "limpa", a loteria municipal dinamiza a economia local e financia projetos sociais importantes sem onerar o contribuinte.
+                Além de ser uma fonte de receita limpa, a loteria estadual amplia a capacidade de investimento do governo,
+                financiando programas estruturantes em saúde, educação, segurança pública, esporte e cultura sem aumentar impostos.
               </p>
               <ul className="space-y-6">
                 {[
-                  { title: "Aumento de Arrecadação", desc: "Receita nova e recorrente para os cofres públicos." },
-                  { title: "Fomento ao Comércio", desc: "Pontos de venda geram fluxo e renda para pequenos comércios locais." },
-                  { title: "Investimento Social", desc: "Recursos carimbados para saúde, esporte, cultura e assistência social." },
-                  { title: "Geração de Empregos", desc: "Criação de postos de trabalho diretos e indiretos na operação." }
+                  { title: "Aumento de Arrecadação", desc: "Receita nova e recorrente para o orçamento estadual." },
+                  { title: "Fortalecimento da Economia", desc: "Rede de pontos de venda movimenta o comércio em todo o estado." },
+                  { title: "Investimento Social Direcionado", desc: "Recursos carimbados para políticas públicas prioritárias." },
+                  { title: "Geração de Empregos", desc: "Criação de postos de trabalho diretos e indiretos em toda a cadeia lotérica." }
                 ].map((item, i) => (
                   <li key={i} className="flex items-start">
                     <div className="flex-shrink-0">
@@ -160,11 +163,11 @@ export function MunicipalLotteries() {
             <div className="hidden md:block absolute top-1/2 left-0 w-full h-1 bg-white/10 -translate-y-1/2 z-0"></div>
             <div className="grid grid-cols-1 md:grid-cols-5 gap-8 relative z-10">
               {[
-                { step: 1, title: "Diagnóstico", desc: "Análise de potencial e viabilidade" },
-                { step: 2, title: "Estruturação Legal", desc: "Criação da lei e regulamentação" },
-                { step: 3, title: "Aprovação", desc: "Trâmite legislativo e sanção" },
-                { step: 4, title: "Licitação", desc: "Processo de escolha do operador" },
-                { step: 5, title: "Operação", desc: "Lançamento e gestão contínua" }
+                { step: 1, title: "Diagnóstico", desc: "Análise de potencial e viabilidade do projeto estadual." },
+                { step: 2, title: "Estruturação Legal", desc: "Criação da lei, regulamentação e modelo de governança." },
+                { step: 3, title: "Aprovação", desc: "Trâmite legislativo, controle de órgãos de fiscalização e sanção." },
+                { step: 4, title: "Licitação", desc: "Processo de escolha do operador ou parceiro tecnológico." },
+                { step: 5, title: "Operação", desc: "Lançamento e gestão contínua com monitoramento de resultados." }
               ].map((item, i) => (
                 <div key={i} className="bg-surface-dark p-6 rounded-xl border border-white/5 shadow-sm flex flex-col items-center text-center">
                   <div className="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold mb-4 shadow-lg shadow-primary/30">
@@ -183,3 +186,4 @@ export function MunicipalLotteries() {
     </div>
   );
 }
+

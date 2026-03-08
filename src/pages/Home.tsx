@@ -31,13 +31,13 @@ export function Home() {
             </p>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:justify-center">
               <Link
-                to="/loterias-municipais"
+                to="/loterias-estaduais"
                 className="inline-flex h-12 min-w-[200px] items-center justify-center rounded-lg bg-primary px-8 text-base font-bold text-white shadow-lg shadow-primary/20 transition-all hover:bg-primary-dark hover:-translate-y-0.5"
               >
                 Conheça Nossas Soluções
               </Link>
               <Link
-                to="/loterias-municipais"
+                to="/loterias-estaduais"
                 className="inline-flex h-12 min-w-[200px] items-center justify-center rounded-lg border border-white/20 bg-transparent px-8 text-base font-bold text-white backdrop-blur-sm transition-all hover:bg-white/10 hover:-translate-y-0.5"
               >
                 Área Pública / Loterias
@@ -70,9 +70,9 @@ export function Home() {
               <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
                 <Ticket className="h-8 w-8" />
               </div>
-              <h3 className="mb-3 text-xl font-bold text-white font-display">Desenvolvimento de Loterias</h3>
+              <h3 className="mb-3 text-xl font-bold text-white font-display">Desenvolvimento de Loterias Estaduais</h3>
               <p className="text-slate-400 leading-relaxed">
-                Planejamento, modelagem e execução técnica de projetos de loterias municipais e estaduais com foco em arrecadação.
+                Planejamento, modelagem e execução técnica de projetos de loterias estaduais com foco em arrecadação sustentável e investimento social.
               </p>
             </div>
             {/* Card 3 */}
@@ -97,14 +97,14 @@ export function Home() {
 
         <div className="relative z-10 mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
           <h2 className="mx-auto max-w-3xl text-3xl font-black tracking-tight text-white sm:text-4xl lg:text-5xl font-display">
-            Especialistas em Loterias Municipais
+            Especialistas em Loterias Estaduais
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-slate-300 font-light">
             Transformamos a arrecadação pública em benefícios sociais através de projetos lotéricos seguros, transparentes e auditáveis.
           </p>
           <div className="mt-10">
             <Link
-              to="/loterias-municipais"
+              to="/loterias-estaduais"
               className="inline-flex items-center justify-center rounded-lg bg-primary px-8 py-4 text-base font-bold text-white shadow-lg shadow-primary/20 transition-all hover:bg-primary-dark hover:-translate-y-1"
             >
               <Crown className="mr-2 h-5 w-5" />

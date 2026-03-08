@@ -10,7 +10,7 @@ export function Header() {
 
   const navLinks = [
     { name: 'Home', href: '/' },
-    { name: 'Loterias Municipais', href: '/loterias-municipais' },
+    { name: 'Loterias Estaduais', href: '/loterias-estaduais' },
   ];
 
   const isActive = (path: string) => location.pathname === path;
